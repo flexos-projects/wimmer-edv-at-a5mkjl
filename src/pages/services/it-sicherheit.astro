@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import CTA from '../../components/CTA.astro';
+--- 
+
+<Layout
+  title="IT Security & Datenschutz"
+  description="Schützen Sie Ihr Unternehmen proaktiv mit unseren IT-Sicherheitslösungen. Von Managed Security Services bis zu Backup- und Disaster-Recovery-Strategien."
+  keywords="IT Security Beratung, Cybersicherheit, Datenschutz, DSGVO, Veeam Backup, Managed Security, Wimmer Consulting"
+>
+
+  <Hero 
+    title="Proaktiver Schutz für Ihr wertvollstes Gut: Ihre Daten"
+    tagline="In einer zunehmend vernetzten Welt sind robuste IT-Sicherheitsmaßnahmen und ein durchdachtes Datenschutzkonzept unerlässlich für den Unternehmenserfolg."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-[var(--color-primary)]">Umfassende Sicherheitskonzepte für den Mittelstand</h2>
+                <p class="mt-4 text-lg text-gray-700">Der Schutz Ihrer persönlichen und geschäftlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO) und helfen Ihnen, eine Sicherheitsarchitektur aufzubauen, die modernen Bedrohungen standhält.</p>
+                <p class="mt-4 text-gray-700">Unsere Dienstleistungen reichen von der Implementierung technischer Schutzmaßnahmen bis hin zur strategischen Beratung für Compliance und Risikomanagement.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Managed Security Services (MSSP)</h3>
+                    <p class="mt-2 text-gray-600">Wir überwachen Ihre Systeme rund um die Uhr, erkennen Bedrohungen frühzeitig und reagieren schnell, um Schäden zu verhindern.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Netzwerksicherheit</h3>
+                    <p class="mt-2 text-gray-600">Von modernen Firewalls bis hin zu Endpoint Protection – wir sichern Ihr Netzwerk an allen entscheidenden Punkten ab.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">DSGVO-Compliance & Beratung</h3>
+                    <p class="mt-2 text-gray-600">Wir unterstützen Sie dabei, die Anforderungen der Datenschutz-Grundverordnung zu erfüllen und rechtliche Risiken zu minimieren.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary)]">Zuverlässiges Backup & Disaster Recovery mit Veeam</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Veeam Backup & Replication ermöglicht eine schnelle, flexible und zuverlässige Wiederherstellung von virtualisierten Anwendungen und Daten. Wir entwickeln eine robuste Backup- und Notfallstrategie für Ihr Unternehmen, damit Sie auch im Ernstfall schnell wieder handlungsfähig sind und Datenverluste minimiert werden.</p>
+    </div>
+</section>
+
+  <CTA 
+    heading="Ist Ihr Unternehmen ausreichend geschützt?"
+    text="Lassen Sie uns Ihre IT-Sicherheitsstrategie überprüfen und potenzielle Schwachstellen aufdecken, bevor es zu spät ist."
+    buttonText="Kostenlosen Security-Check anfragen"
+    buttonLink="/kontakt"
+  />
+
+</Layout>

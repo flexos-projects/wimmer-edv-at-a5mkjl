@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout
+  title="Kontaktieren Sie uns"
+  description="Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Kontaktieren Sie uns für ein unverbindliches und kostenloses Erstgespräch."
+  keywords="IT Support Linz Kontakt, Wimmer Consulting Kontakt, IT Beratung anfragen"
+>
+
+  <Hero 
+    title="Lassen Sie uns sprechen"
+    tagline="Wir freuen uns darauf, von Ihnen zu hören. Ob Sie eine konkrete Anfrage haben oder ein unverbindliches Erstgespräch wünschen – wir sind für Sie da."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold text-[var(--color-primary)] mb-6">So erreichen Sie uns</h2>
+          <div class="space-y-4 text-lg text-gray-700">
+            <p>
+              <strong class="block text-gray-800">Adresse:</strong>
+              Wimmer Consulting GmbH<br>
+              Verdistrasse 23<br>
+              A-4600 Schleissheim, Österreich
+            </p>
+            <p>
+              <strong class="block text-gray-800">Telefon:</strong>
+              <a href="tel:+43724272100" class="text-[var(--color-primary)] hover:underline">+43 7242 72 100</a>
+            </p>
+            <p>
+              <strong class="block text-gray-800">E-Mail:</strong>
+              <a href="mailto:office@wimmer-edv.at" class="text-[var(--color-primary)] hover:underline">office@wimmer-edv.at</a>
+            </p>
+          </div>
+          <div class="mt-8 h-80 bg-gray-200 rounded-lg">
+             <!-- Embedded Map Placeholder -->
+          </div>
+        </div>
+        <div>
+           <h2 class="text-3xl font-bold text-[var(--color-primary)] mb-6">Schreiben Sie uns eine Nachricht</h2>
+           <ContactForm />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+--- 
+
+<Layout
+  title="Erfolgsgeschichten unserer Kunden"
+  description="Sehen Sie, wie wir Unternehmen wie Ihrem geholfen haben, durch strategische IT-Lösungen ihre Ziele zu erreichen. Erfolgsgeschichten aus der Praxis."
+  keywords="IT Projekte KMU Österreich, Case Studies, Kundenprojekte, ERP Einführung, Cloud Migration"
+>
+
+  <Hero 
+    title="Erfolgsgeschichten aus der Praxis"
+    tagline="Sehen Sie, wie wir durchdachte IT-Strategien in messbare Erfolge für unsere Kunden verwandeln."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary)]">Projekte im Fokus</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Dieser Bereich wird aktuell mit neuen, detaillierten Fallstudien unserer erfolgreichen Kundenprojekte überarbeitet. Bitte schauen Sie bald wieder vorbei!</p>
+        <div class="mt-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-24 w-24 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+        </div>
+         <div class="mt-8">
+          <a href="/kontakt" class="inline-block bg-[var(--color-accent)] text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-orange-600 transition-transform transform hover:scale-105">
+              Kontaktieren Sie uns für Referenzen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,104 @@
+---
+const navLinks = [
+  { href: "/", text: "Home" },
+  {
+    text: "Leistungen",
+    dropdown: [
+      { href: "/services/erp-dynamics-365", text: "ERP & Dynamics 365" },
+      { href: "/services/cloud-infrastruktur", text: "Cloud & Infrastruktur" },
+      { href: "/services/it-sicherheit", text: "IT-Sicherheit" },
+      { href: "/services/softwareentwicklung", text: "Softwareentwicklung" },
+      { href: "/services/legacy-modernisierung", text: "AS/400 Modernisierung" },
+    ],
+  },
+  { href: "/case-studies", text: "Erfolgsgeschichten" },
+  { href: "/ueber-uns", text: "Über Uns" },
+  { href: "/kontakt", text: "Kontakt" },
+];
+--- 
+<header id="main-header" class="bg-[var(--color-white)]/80 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+  <div class="container">
+    <div class="flex items-center justify-between h-20">
+      <a href="/" class="text-xl md:text-2xl font-bold text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors">
+        Wimmer Consulting
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8">
+        {navLinks.map(link => (
+          <div class="relative group">
+            {link.dropdown ? (
+              <>
+                <button class="inline-flex items-center text-base font-semibold text-[var(--color-text)] hover:text-[var(--color-primary)]">
+                  {link.text}
+                  <svg class="ml-2 -mr-1 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <div class="absolute left-0 mt-2 w-64 origin-top-left bg-[var(--color-white)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  <div class="py-1" role="menu" aria-orientation="vertical">
+                    {link.dropdown.map(item => (
+                      <a href={item.href} class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[var(--color-primary)]" role="menuitem">{item.text}</a>
+                    ))}
+                  </div>
+                </div>
+              </>
+            ) : (
+              <a href={link.href} class="text-base font-semibold text-[var(--color-text)] hover:text-[var(--color-primary)]">
+                {link.text}
+              </a>
+            )}
+          </div>
+        ))}
+      </nav>
+      <div class="lg:hidden">
+        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+          <span class="sr-only">Hauptmenü öffnen</span>
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      {navLinks.map(link => (
+        <>
+          {link.dropdown ? (
+            <div class="mobile-dropdown">
+              <button class="mobile-dropdown-toggle w-full text-left block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-[var(--color-primary)]">{link.text}</button>
+              <div class="mobile-dropdown-content hidden pl-4">
+                {link.dropdown.map(item => (
+                  <a href={item.href} class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-[var(--color-secondary)]">{item.text}</a>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <a href={link.href} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-[var(--color-primary)]">{link.text}</a>
+          )}
+        </>
+      ))}
+    </div>
+  </div>
+</header>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = mobileMenuButton.querySelector('svg:first-child');
+  const iconClose = mobileMenuButton.querySelector('svg:last-child');
+
+  mobileMenuButton.addEventListener('click', () => {
+    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+    mobileMenuButton.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
+    mobileMenu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('.mobile-dropdown-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      content.classList.toggle('hidden');
+    });
+  });
+</script>

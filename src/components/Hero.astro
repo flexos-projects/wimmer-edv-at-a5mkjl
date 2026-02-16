@@ -1,0 +1,29 @@
+---
+export interface Props {
+    title: string;
+    tagline: string;
+    ctaText?: string;
+    ctaLink?: string;
+    imageUrl?: string;
+}
+
+const { title, tagline, ctaText, ctaLink, imageUrl } = Astro.props;
+
+const backgroundStyle = imageUrl 
+  ? `background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url(${imageUrl}); background-size: cover; background-position: center;`
+  : 'background-color: var(--color-primary);';
+---
+
+<section style={backgroundStyle} class="py-20 md:py-32 text-white">
+    <div class="container text-center">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4" set:html={title} />
+        <p class="text-lg md:text-2xl max-w-3xl mx-auto text-gray-200">{tagline}</p>
+        {ctaText && ctaLink && (
+            <div class="mt-8">
+                <a href={ctaLink} class="inline-block bg-[var(--color-accent)] text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-orange-600 transition-transform transform hover:scale-105">
+                    {ctaText}
+                </a>
+            </div>
+        )}
+    </div>
+</section>

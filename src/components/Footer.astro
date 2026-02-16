@@ -1,0 +1,52 @@
+---
+const currentYear = new Date().getFullYear();
+--- 
+<footer class="bg-gray-800 text-white">
+  <div class="container py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <div>
+        <h3 class="text-lg font-bold mb-4">Wimmer Consulting GmbH</h3>
+        <p class="text-gray-400">Verdistrasse 23<br>A-4600 Schleissheim<br>Österreich</p>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">Navigation</h3>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+          <li><a href="/ueber-uns" class="text-gray-400 hover:text-white transition-colors">Über Uns</a></li>
+          <li><a href="/case-studies" class="text-gray-400 hover:text-white transition-colors">Erfolgsgeschichten</a></li>
+          <li><a href="/kontakt" class="text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">Leistungen</h3>
+        <ul class="space-y-2">
+          <li><a href="/services/erp-dynamics-365" class="text-gray-400 hover:text-white transition-colors">ERP & Dynamics 365</a></li>
+          <li><a href="/services/cloud-infrastruktur" class="text-gray-400 hover:text-white transition-colors">Cloud & Infrastruktur</a></li>
+          <li><a href="/services/it-sicherheit" class="text-gray-400 hover:text-white transition-colors">IT-Sicherheit</a></li>
+          <li><a href="/services/softwareentwicklung" class="text-gray-400 hover:text-white transition-colors">Softwareentwicklung</a></li>
+          <li><a href="/services/legacy-modernisierung" class="text-gray-400 hover:text-white transition-colors">AS/400 Modernisierung</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">Kontakt</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="tel:+43724272100" class="hover:text-white transition-colors">Tel: +43 7242 72 100</a></li>
+          <li><a href="mailto:office@wimmer-edv.at" class="hover:text-white transition-colors">Mail: office@wimmer-edv.at</a></li>
+        </ul>
+        <div class="mt-4">
+        	<a href="/kontakt" class="inline-block bg-[var(--color-accent)] text-white font-bold py-2 px-4 rounded hover:bg-orange-600 transition-colors">Kostenloses Erstgespräch</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+      <p>&copy; {currentYear} Wimmer Consulting GmbH. Alle Rechte vorbehalten.</p>
+      <!-- Placeholder for Impressum/Datenschutz -->
+      <!-- <p class="mt-2"><a href="/impressum" class="hover:text-white">Impressum</a> | <a href="/datenschutz" class="hover:text-white">Datenschutz</a></p> -->
+    </div>
+  </div>
+</footer>

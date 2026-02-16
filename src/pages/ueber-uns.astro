@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout
+  title="Über Wimmer Consulting"
+  description="Lernen Sie das Team und die Werte von Wimmer Consulting kennen. Erfahren Sie, warum wir der richtige IT-Partner für Ihr Unternehmen sind."
+  keywords="Wimmer Consulting Team, IT Experten Österreich, IT Beratung Linz"
+>
+
+  <Hero 
+    title="Ihr IT-Partner auf Augenhöhe"
+    tagline="Wir sind ein dynamisches Team, das Motivation, Verantwortung und Qualifikation vereint, um die IT-Prozesse unserer Kunden nachhaltig zu verbessern."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-[var(--color-primary)]">Unsere Mission</h2>
+          <p class="mt-4 text-lg text-gray-700">Unsere Mission ist es, mittelständischen Unternehmen in Österreich zu helfen, die Chancen der Digitalisierung voll auszuschöpfen. Wir sehen uns nicht nur als Dienstleister, sondern als strategischen Partner, der Ihre Geschäftsprozesse versteht und mit maßgeschneiderten IT-Lösungen optimiert. Wir garantieren Ihnen durch die richtige Auswahl und Planung Ihrer IT-Investitionen maximale Sicherheit und einen hohen Return on Investment.</p>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-[var(--color-primary)]">Unsere Werte</h2>
+          <ul class="mt-4 space-y-4 text-lg">
+            <li class="flex"><strong class="w-32 text-[var(--color-secondary)]">Partnerschaft:</strong> Wir pflegen eine offene und ehrliche Kommunikation und arbeiten eng mit Ihnen zusammen.</li>
+            <li class="flex"><strong class="w-32 text-[var(--color-secondary)]">Kompetenz:</strong> Wir investieren kontinuierlich in das Know-how unseres Teams, um Ihnen stets die besten Lösungen bieten zu können.</li>
+            <li class="flex"><strong class="w-32 text-[var(--color-secondary)]">Zuverlässigkeit:</strong> Wir planen, installieren und betreuen Ihre Systeme für höchste Verfügbarkeit und Sicherheit.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+      <div class="container text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary)]">Karriere bei Wimmer Consulting</h2>
+          <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Sie sind ein IT-Talent und suchen eine neue Herausforderung in einem dynamischen Umfeld? Wir sind immer auf der Suche nach qualifizierten und motivierten Mitarbeitern. Aktuell haben wir keine offenen Stellen ausgeschrieben, freuen uns aber jederzeit über Ihre Initiativbewerbung.</p>
+          <div class="mt-8">
+              <a href="mailto:office@wimmer-edv.at" class="inline-block bg-[var(--color-accent)] text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-orange-600 transition-transform transform hover:scale-105">
+                  Jetzt bewerben
+              </a>
+          </div>
+      </div>
+  </section>
+
+</Layout>

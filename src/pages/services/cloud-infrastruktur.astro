@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import CTA from '../../components/CTA.astro';
+--- 
+
+<Layout
+  title="Cloud Lösungen & Managed IT Services"
+  description="Skalierbare und sichere Cloud-Lösungen für KMU. Von der strategischen Azure-Beratung über die Migration bis hin zu kompletten Managed IT Services."
+  keywords="Cloud Lösungen KMU, Managed IT Services, Microsoft Azure, Cloud Migration, Digital Workplace, Wimmer Consulting"
+>
+
+  <Hero 
+    title="Die Zukunft Ihres Unternehmens liegt in der Cloud"
+    tagline="Profitieren Sie von maximaler Flexibilität, Skalierbarkeit und Sicherheit mit unseren maßgeschneiderten Cloud-Lösungen und Managed IT Services."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary)]">Unser Cloud & Managed Services Portfolio</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Wir planen, installieren und betreuen Ihr Netzwerk und Ihre Cloud-Infrastruktur. Höchste Verfügbarkeit, Zuverlässigkeit, Aktualität und Sicherheit – geben Sie sich nicht mit weniger zufrieden.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-primary)]">Cloud-Strategieberatung</h3>
+          <p class="text-gray-700">Wir analysieren Ihre Anforderungen und entwickeln eine zukunftssichere Cloud-Strategie, die perfekt zu Ihrem Unternehmen passt, mit einem klaren Fokus auf Microsoft Azure.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-primary)]">Cloud-Migration</h3>
+          <p class="text-gray-700">Wir sorgen für eine nahtlose und sichere Migration Ihrer bestehenden Systeme, Anwendungen und Daten in die Cloud – mit minimaler Unterbrechung des Betriebs.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-primary)]">Managed Cloud & IT</h3>
+          <p class="text-gray-700">Konzentrieren Sie sich auf Ihr Kerngeschäft, während wir den Betrieb, die Überwachung und die Wartung Ihrer gesamten IT-Infrastruktur übernehmen.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-primary)]">Digital Workplace</h3>
+          <p class="text-gray-700">Wir implementieren moderne Arbeitsplatzlösungen mit Microsoft 365, die die Zusammenarbeit und Produktivität Ihrer Teams fördern – im Büro und remote.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-primary)]">Netzwerkmanagement</h3>
+          <p class="text-gray-700">Von der Planung bis zur Betreuung sorgen wir für ein stabiles, sicheres und performantes Netzwerk, das die Basis Ihrer digitalen Prozesse bildet.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-primary)]">IT-Support</h3>
+          <p class="text-gray-700">Unser kompetentes Team steht Ihnen als verlässlicher Ansprechpartner für alle IT-Fragen zur Verfügung und sorgt für schnelle Problemlösungen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA 
+    heading="Entlasten Sie Ihre IT"
+    text="Erfahren Sie in einem kostenlosen Beratungsgespräch, wie Sie mit unseren Managed IT Services Kosten senken und gleichzeitig die Sicherheit und Effizienz erhöhen können."
+    buttonText="Jetzt Termin vereinbaren"
+    buttonLink="/kontakt"
+  />
+
+</Layout>

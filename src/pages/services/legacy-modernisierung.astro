@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import CTA from '../../components/CTA.astro';
+--- 
+
+<Layout
+  title="AS/400 (IBM i) Modernisierung & Support"
+  description="Wir sind Ihre Experten für AS/400 (IBM i). Sichern Sie Ihre Investition durch gezielte Modernisierung, professionelle RPG-Entwicklung und zuverlässigen Support."
+  keywords="AS/400 Modernisierung, IBM i, RPG Programmierung, iSeries, System i, Legacy Modernisierung, Wimmer Consulting"
+>
+
+  <Hero 
+    title="AS/400 & IBM i: Die Zukunft eines bewährten Systems"
+    tagline="Nennen Sie sie auch noch immer AS/400? Obwohl sie in der Zwischenzeit iSeries, i5, System i genannt wurde? Wir kennen das Produkt seit den Anfängen und helfen Ihnen, Ihre Investition zukunftssicher zu machen."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-[var(--color-primary)]">Mehr als nur Legacy: Das Potenzial von IBM i</h2>
+                <p class="mt-4 text-lg text-gray-700">Ihr IBM i System ist eine stabile und leistungsfähige Plattform, die oft das Herzstück kritischer Geschäftsprozesse bildet. Statt eines teuren und riskanten Wechsels setzen wir auf gezielte Modernisierung, um die Stärken des Systems zu erhalten und es fit für die digitale Zukunft zu machen.</p>
+                <p class="mt-4 text-gray-700">Seit den Tagen des IBM S/3x haben wir unsere Erfahrung in OS/400 und RPG aufgebaut. Noch Fragen? Stellen Sie sie! Wir haben die Antwort!</p>
+            </div>
+            <div class="bg-gray-100 p-8 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Unsere Modernisierungsstrategien:</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start"><svg class="flex-shrink-0 h-5 w-5 text-green-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span><strong>Moderne Oberflächen (UI/UX):</strong> Wir verwandeln Ihre Green Screens in intuitive, webbasierte Benutzeroberflächen.</span></li>
+                <li class="flex items-start"><svg class="flex-shrink-0 h-5 w-5 text-green-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span><strong>API-Integration:</strong> Wir öffnen Ihr IBM i System über APIs und ermöglichen die nahtlose Anbindung an moderne Web- und Cloud-Anwendungen.</span></li>
+                <li class="flex items-start"><svg class="flex-shrink-0 h-5 w-5 text-green-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span><strong>Experten-Support & RPG-Entwicklung:</strong> Wir warten Ihre bestehenden RPG-Anwendungen und entwickeln sie weiter, um neue Anforderungen zu erfüllen.</span></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <CTA 
+    heading="Sprechen Sie mit unseren IBM i Experten"
+    text="Lassen Sie uns gemeinsam eine Strategie entwickeln, um Ihr AS/400-System optimal zu nutzen und für die Herausforderungen von morgen zu wappnen."
+    buttonText="Jetzt Beratungstermin vereinbaren"
+    buttonLink="/kontakt"
+  />
+
+</Layout>

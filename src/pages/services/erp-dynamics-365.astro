@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import CTA from '../../components/CTA.astro';
+--- 
+
+<Layout
+  title="Microsoft Dynamics 365 & ERP Beratung"
+  description="Optimieren Sie Ihre Geschäftsprozesse mit Microsoft Dynamics 365. Wir bieten umfassende Beratung, Implementierung und Support für ERP-Systeme."
+  keywords="Microsoft Dynamics 365 Beratung, ERP Beratung, Business Central, ERP Implementierung, Wimmer Consulting"
+>
+
+  <Hero 
+    title="Moderne ERP-Lösungen mit Microsoft Dynamics 365"
+    tagline="Verbinden Sie Ihre Finanzen, Vertriebs-, Service- und Betriebsabläufe mit einer zentralen Anwendung, um Ihre Prozesse zu optimieren und fundierte Entscheidungen zu treffen."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-[var(--color-primary)]">Warum ein modernes ERP-System entscheidend ist</h2>
+          <p class="mt-4 text-lg text-gray-700">Vergeuden Sie nicht Ihre Zeit mit schwerfälligen oder unausgereiften Systemen. Ein modernes ERP-System wie Microsoft Dynamics 365 ist der Schlüssel, um die Flexibilität Ihrer Prozesse optimal über die IT abzubilden. Vertrauen Sie auf das gewohnte Look-and-Feel von Microsoft-Anwendungen und sparen Sie sich komplizierte Einschulungen Ihrer Mitarbeiter.</p>
+          <p class="mt-4 text-gray-700">Dynamics 365 ist technologisch State-of-the-Art und bietet die Skalierbarkeit und Innovationskraft, die mittelständische Unternehmen für nachhaltiges Wachstum benötigen.</p>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <h3 class="text-xl font-bold mb-4">Unsere ERP-Leistungen im Überblick:</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Umfassende Prozessanalyse & Beratung</li>
+            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Implementierung von Dynamics 365 Business Central</li>
+            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Migration von Altsystemen</li>
+            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Individuelle Anpassungen & Erweiterungen</li>
+            <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Laufender Support & Managed Services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA 
+    heading="Optimieren Sie Ihre Geschäftsprozesse"
+    text="Sprechen Sie mit unseren Experten und erfahren Sie, wie Microsoft Dynamics 365 Ihr Unternehmen transformieren kann."
+    buttonText="Kostenloses Beratungsgespräch anfordern"
+    buttonLink="/kontakt"
+  />
+
+</Layout>

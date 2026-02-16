@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wimmer-edv.at/sitemap-index.xml

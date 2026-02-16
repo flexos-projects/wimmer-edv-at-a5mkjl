@@ -1,2 +1,12 @@
 import { defineConfig } from 'astro/config';
-export default defineConfig({ output: 'static' });
+import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
+
+// https://astro.build/config
+export default defineConfig({
+  site: 'https://www.wimmer-consulting.at',
+  integrations: [sitemap()],
+  vite: {
+    plugins: [tailwindcss()]
+  }
+});

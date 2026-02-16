@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import CTA from '../../components/CTA.astro';
+--- 
+
+<Layout
+  title="Individuelle Softwareentwicklung & Integration"
+  description="Maßgeschneiderte Softwarelösungen, die exakt auf Ihre Anforderungen zugeschnitten sind. Wir entwickeln und integrieren Applikationen zur Steigerung Ihrer Effizienz."
+  keywords="Individuelle Softwareentwicklung, Webanwendungen, API Entwicklung, Prozessautomatisierung, Wimmer Consulting"
+>
+
+  <Hero 
+    title="Maßgeschneiderte Software, die Ihre Prozesse perfekt abbildet"
+    tagline="Standardsoftware passt nicht immer zu Ihren einzigartigen Herausforderungen. Wir entwickeln individuelle Lösungen, die Ihre Effizienz steigern und Ihnen einen echten Wettbewerbsvorteil verschaffen."
+  />
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary)]">Von der Idee zur fertigen Anwendung</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Unser agiler Entwicklungsprozess stellt sicher, dass wir flexibel auf Ihre Bedürfnisse reagieren und eine Lösung schaffen, die genau Ihren Vorstellungen entspricht. Transparenz und enge Zusammenarbeit sind für uns selbstverständlich.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="p-4">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-primary)] text-white mx-auto mb-4 font-bold text-2xl">1</div>
+            <h3 class="text-xl font-bold">Analyse & Pflichtenheft</h3>
+            <p class="mt-2 text-gray-600">Wir unterstützen Sie beim Erstellen des Pflichtenheftes und definieren gemeinsam die genauen Anforderungen.</p>
+        </div>
+        <div class="p-4">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-primary)] text-white mx-auto mb-4 font-bold text-2xl">2</div>
+            <h3 class="text-xl font-bold">Entwicklung & Prototyping</h3>
+            <p class="mt-2 text-gray-600">Wir entwickeln eigenständige Anwendungen, erweitern bestehende Applikationen oder realisieren Onlineshops.</p>
+        </div>
+        <div class="p-4">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-primary)] text-white mx-auto mb-4 font-bold text-2xl">3</div>
+            <h3 class="text-xl font-bold">Integration & Testing</h3>
+            <p class="mt-2 text-gray-600">Wir sorgen für die nahtlose Integration in Ihre bestehende Systemlandschaft und garantieren höchste Qualität.</p>
+        </div>
+        <div class="p-4">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-primary)] text-white mx-auto mb-4 font-bold text-2xl">4</div>
+            <h3 class="text-xl font-bold">Support & Wartung</h3>
+            <p class="mt-2 text-gray-600">Auch nach dem Go-live stehen wir Ihnen mit zuverlässigem Support und kontinuierlicher Weiterentwicklung zur Seite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA 
+    heading="Haben Sie eine einzigartige Herausforderung?"
+    text="Schildern Sie uns Ihr Anliegen. Wir finden die passende technologische Lösung und setzen sie für Sie um."
+    buttonText="Projekt unverbindlich anfragen"
+    buttonLink="/kontakt"
+  />
+
+</Layout>
