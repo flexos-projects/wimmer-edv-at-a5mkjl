@@ -1,0 +1,75 @@
+---
+// Status page — auto-replaced when the real site is deployed
+---
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="30" />
+  <title>Resurrecting wimmer-edv.at...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0a0a0a;
+      color: #e5e5e5;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { text-align: center; padding: 2rem; max-width: 480px; }
+    .bolt {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.15); }
+    }
+    h1 { font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 2.5rem; }
+    .phases {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .phase {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .phase.done { color: #22c55e; }
+    .phase.active { color: #f59e0b; }
+    .phase .icon { width: 1.25rem; text-align: center; flex-shrink: 0; }
+    .phase.active .icon { animation: spin 1.5s linear infinite; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .refresh { color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bolt">⚡</div>
+    <h1>Resurrecting wimmer-edv.at</h1>
+    <p class="subtitle">Your website is being rebuilt with AI</p>
+    <div class="phases">
+      <div class="phase done"><span class="icon">✓</span> Setup complete</div>
+      <div class="phase active"><span class="icon">◌</span> Crawling original site</div>
+      <div class="phase"><span class="icon">○</span> Analyzing content &amp; design</div>
+      <div class="phase"><span class="icon">○</span> Designing new experience</div>
+      <div class="phase"><span class="icon">○</span> Generating pages</div>
+      <div class="phase"><span class="icon">○</span> Deploying to production</div>
+      <div class="phase"><span class="icon">○</span> Ready!</div>
+    </div>
+    <p class="refresh">This page auto-refreshes every 30 seconds</p>
+  </div>
+</body>
+</html>
